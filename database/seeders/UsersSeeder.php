@@ -18,9 +18,9 @@ class UsersSeeder extends Seeder
     {
         //
         User::create([
-            'name' => 'Admin Mundo Web',
-            'email' => 'hola@mundoweb.pe',
-            'password' => Hash::make('12345678'),
+            'name' => 'Admin Yep Advisors',
+            'email' => 'admin@yepadvisors.com',
+            'password' => Hash::make('y3p4dv150r'),
         ]);
 
     }
