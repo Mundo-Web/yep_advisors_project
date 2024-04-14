@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="./css/aos.css" />
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 
 </head>
 
@@ -77,15 +78,18 @@
       <div
         class="text-white max-w-screen-lg max-h-72 mx-auto text-center flex flex-col my-28 sm:my-20 md:my-20 lg:mt-10 pb-96 md:pb-0">
         <h1 class="leading-none font-inter text-mediumSize md:leading-snug px-10 lg:px-0">
-          Inversiones Inteligentes para un Futuro Próspero
+          Una gestión patrimonial inteligente asegura tu futuro financiero
+
         </h1>
         <p class="pt-10 md:pt-6 font-inter text-regularSize font-regular px-10 lg:px-0 mx-5">
-          Maximiza tu patrimonio con nuestros servicios de
-          <b>Wealth Management</b>, Finanzas Corporativas y Estructura
-          Financiera. Nuestros expertos en
-          <b>gestión de finanzas</b> implementarán soluciones innovadoras para
-          asegurar tu éxito financiero.Descubre cómo podemos hacer para que
-          tus inversiones trabajen para ti.
+          <b>Descubre cómo podemos hacer para que tus inversiones trabajen
+            para ti.</b>
+          Maximiza tu patrimonio y mejora tus finanzas con nuestros servicios
+          de Wealth Management, Finanzas Corporativas y Estructuración
+          Financiera. Nuestros especialistas se encargarán de implementar
+          <b>estrategias financieras</b> innovadoras para garantizar el
+          crecimiento y la perdurabilidad de tu patrimonio a lo largo de las
+          generaciones.
         </p>
         <div class="flex justify-center pt-5">
           <a class="flex justify-center items-center gap-2 rounded-xl border px-4 cursor-pointer hover:bg-colorBackground hover:text-white duration-300"
@@ -130,8 +134,9 @@
           Disciplina
         </h3>
         <p class="pb-8 font-regular font-inter text-basicSize group-hover:text-white">
-          Guiados por una disciplina implacable, optimizamos cada estrategia
-          para garantizar resultados duraderos.
+          Tomar decisiones racionales y controlar las emociones del mercado
+          aseguran la estabilidad y el crecimiento de las inversiones a largo
+          plazo.
         </p>
       </div>
 
@@ -173,8 +178,8 @@
           Confianza y Seguridad
         </h3>
         <p class="pb-8 font-regular font-inter text-basicSize group-hover:text-white">
-          Tu seguridad financiera es nuestra prioridad, respaldada por décadas
-          de experiencia y un compromiso inquebrantable con la confianza.
+          Nos comprometemos a mantener la integridad de sus inversiones
+          mediante un enfoque prudente y una gestión cuidadosa del riesgo.
         </p>
       </div>
 
@@ -208,12 +213,36 @@
           Acerca de Nosotros
         </h2>
         <p class="font-regular font-inter text-regularSize pb-5 text-colorSubtitle">
-          En Yep Advisors, fusionamos la vitalidad de una empresa joven con la
-          solidez de profesionales experimentados. Nuestro equipo de
-          <b>consultoría financiera</b> tiene un enfoque fresco y dinámico y
-          es reconocido por su excelencia y resultados probados.
+          <b>Yep Advisors</b> combina la vitalidad de una empresa joven con la
+          experiencia de profesionales experimentados. Ofrecemos tres líneas
+          de servicio:
         </p>
-
+        <ul
+          class="list-decimal list-inside font-regular font-inter text-regularSize pb-5 text-colorSubtitle flex flex-col gap-5">
+          <li>
+            <b>Wealth Management</b>, este proporciona asesoramiento y acceso
+            completo a la Bolsa de Nueva York y Lima. Además, cuenta con una
+            amplia gama de productos y servicios bursátiles a instituciones e
+            inversionistas a través de las principales entidades financieras
+            en los EE.UU. reguladas por la SEC
+            <a href="https://www.sec.gov/" target="_blank">(www.sec.gov)</a>,
+            FINRA
+            <a href="https://www.finra.org/#/" target="_blank">(www.finra.org)</a>
+            y aseguradas por SIPC
+            <a href="https://www.sipc.org/" target="_blank">(www.sipc.org)</a>.
+          </li>
+          <li>
+            Nuestro servicio de <b>Finanzas Corporativas</b>, aseguramos tu
+            orden financiero, permitiendo la toma de decisiones eficientes y
+            optimizando recursos para el crecimiento y rentabilidad de la
+            empresa.
+          </li>
+          <li>
+            Nuestro servicio de <b>Estructuración Financiera</b>, te ayudará a
+            obtener fuentes de financiamiento acordes a tus necesidades.
+            ¡Estamos aquí para impulsar tu <b>éxito financiero</b>!
+          </li>
+        </ul>
         <p class="font-regular font-inter text-regularSize pb-7 text-colorSubtitle">
           Con un equipo apasionado y una visión audaz, estamos transformando
           la forma en que se <b>gestionan las finanzas</b>. Desde estrategias
@@ -221,26 +250,27 @@
           impulsar tu éxito financiero.
         </p>
         <div class="w-full">
-          <img src="./images/img/nice-meet-you.webp" alt="nice to meet you" class="w-full" />
+          <img src="./images/img/Ima2.png" alt="nice to meet you" class="w-full" />
         </div>
       </div>
-
       <div class="text-teal-900">
         <div class="w-full">
-          <img src="./images/img/workplace-team-cooperation-businesswoman-laptop-office.webp"
-            alt="workplace bussinesswoman" class="w-full object-cover" />
+          <img src="./images/img/Ima1.png" alt="workplace bussinesswoman" class="w-full object-cover" />
         </div>
-
         <div>
           <h2 class="font-semibold text-subtitle font-inter pt-10 text-colorSubtitle leading-none md:leading-snug">
             Nuestra Filosofía de inversión
           </h2>
           <p class="font-regular font-inter text-regularSize pt-4 text-colorSubtitle">
-            En Yep Advisors, nuestra filosofía de inversión se centra en el
-            crecimiento sostenible y la gestión prudente del riesgo. Buscamos
-            oportunidades que generen resultados sólidos a largo plazo para
-            nuestros clientes, mediante una estrategia basada en la
-            diversificación inteligente y la transparencia absoluta.
+            En Yep Advisors, nuestra filosofía de <b>inversión</b> se basa en
+            el crecimiento sostenible y la gestión prudente del riesgo.
+            Buscamos oportunidades que generen resultados sólidos a largo
+            plazo para nuestros clientes. Esto lo logramos combinando un
+            exhaustivo <b>análisis fundamental</b> que nos permite identificar
+            las mejores empresas con mayor potencial de crecimiento y
+            aplicando diferentes estrategias de <b>análisis técnico</b> que
+            nos permite identificar las tendencias del mercado y así obtener
+            la rentabilidad esperada
           </p>
         </div>
       </div>
@@ -248,17 +278,27 @@
 
     <!-- PARTNERSHIPS  -->
 
-    <section class="bg-colorBackground py-5 my-10" id="clientes" data-aos="fade-up" data-aos-offset="150">
-      <h2 class="font-inter font-semibold text-littleTitle text-center pb-10 md:pb-1 text-white">
+    <section class="bg-[#F9FCFB] py-5 my-10" id="clientes" data-aos="fade-up" data-aos-offset="150">
+      <h2 class="font-inter font-semibold text-littleTitle text-center pb-10 text-[#2D694B]">
         Partnerships
       </h2>
 
+      <div class="swiper logos">
+        <div class="swiper-wrapper">
+          @foreach ($logos as $logo)
+            <div class="swiper-slide">
+              <div class="flex justify-center items-center"">
+                <img src="{{ asset($logo->url_image) }}" alt="{{ $logo->title }}" />
+              </div>
+            </div>
+          @endforeach
+
+        </div>
+        <div class="swiper-pagination"></div>
+
+      </div>
       <div class="grid grid-cols-1 gap-5 md:gap-0 md:flex justify-around items-center max-w-screen-md mx-auto pb-5">
-        @foreach ($logos as $logo)
-          <div class="mx-auto">
-            <img src="{{ asset($logo->url_image) }}" alt="{{ $logo->title }}" />
-          </div>
-        @endforeach
+
 
       </div>
     </section>
@@ -385,8 +425,8 @@
             </h2>
             <p class="font-inter font-regular text-basicSize">
               Yep Advisors: Expertos en Wealth Management, Finanzas
-              Corporativas y Estructura Financiera. Tu socio confiable hacia
-              el éxito financiero.
+              Corporativas y Estructuración Financiera. Tu socio confiable
+              hacia el éxito financiero.
             </p>
           </div>
 
@@ -668,10 +708,38 @@
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+
+  <script>
+    const swiper = new Swiper(".logos", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      grabCursor: true,
+      centeredSlides: false,
+      loop: true,
+      initialSlide: 0,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          centeredSlides: true,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
   </script>
 
   <script>
