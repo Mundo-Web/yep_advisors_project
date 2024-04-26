@@ -12,12 +12,17 @@
         <div class="p-6">
 
 
-          <p> <span class="font-semibold text-lg">{{ $message->full_name }}</span> esta interesado en el servicio de
-            {{ $message->source }} , esta persona nos conocio a travez de <span
-              class="font-semibold text-lg">{{ $message->service_product }}</span>, para ponerce
-            en contacto utilice su numero te telefono <span class="font-semibold text-lg">{{ $message->phone }}</span> o
-            mediante su correo electronico <span class="font-semibold text-lg"><i class="fa-solid fa-at"></i>
+          <p><span class="font-semibold text-lg">{{ $message->full_name }}</span> </p>
+          <p> esta interesado en el servicio de
+            {{ $message->source }} ,
+
+            la persona nos conocio a travez de <span
+              class="font-semibold text-lg">{{ $message->service_product }}</span>,</p>
+          <p> Estoy interesado en que me llame al
+            numero <span class="font-semibold text-lg">{{ $message->phone }}</span></p>
+          <p>o enviarme un correo a <span class="font-semibold text-lg"><i class="fa-solid fa-at"></i>
               {{ $message->email }}</span></p>
+
 
           <p class="my-10">
             {{ $message->message }}

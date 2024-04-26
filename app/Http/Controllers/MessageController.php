@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\EmailConfig;
 use App\Http\Requests\StoreMessageRequest;
 use App\Http\Requests\UpdateMessageRequest;
 use App\Models\Message;
@@ -40,6 +41,7 @@ class MessageController extends Controller
     function storePublic(Request $request)
     {
         $mensaje = new Message();
+        $data= $request->all();
 
         $mensaje->full_name = $request-> nombre; 
         $mensaje->email = $request-> email; 
@@ -47,9 +49,26 @@ class MessageController extends Controller
         $mensaje->source = $request-> textoSeleccionado; 
         $mensaje->service_product = $request-> textoMeet; 
 
+        
         $mensaje->save();
-
+        $this->envioCorreo($data);    
         return response()->json(['message' => 'Solicitud enviada Correctamente']);
+    }
+    private function envioCorreo($data){
+        
+        $name = $data['nombre'];
+        $mail = EmailConfig::config();
+        try {
+            $mail->addAddress($data['email']);
+            $mail->Body = "Buenas tardes $name su solicitud fue procesada";
+            $mail->isHTML(true);
+            $mail->send();
+            
+        } catch (\Throwable $th) {
+            //throw $th;
+        }
+        
+       
     }
 
     /**
