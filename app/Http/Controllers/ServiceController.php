@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateServiceRequest;
 use App\Models\ClientLogos;
 use App\Models\General;
 use App\Models\Service;
+use App\Models\Strength;
 use Illuminate\Http\Request;
 
 //use Intervention\Image\Facades\Image;
@@ -35,10 +36,11 @@ class ServiceController extends Controller
 
     public function mostrarFront()
     {
-        $servicios = Service::where("status", "=", true)->get();
+        $servicios = Service::activeDestacado()->get();
         $logos = ClientLogos::where("status", "=", true)->get();
         $generales = General::where('id', '=', 1 )->get();
-        return view('public.index', compact('servicios', 'logos', 'generales'));
+        $fortalezas = Strength::where('status', '=' , '1')->get();
+        return view('public.index', compact('servicios', 'logos', 'generales', 'fortalezas'));
     }
 
     /**
@@ -72,24 +74,7 @@ class ServiceController extends Controller
 
             $img =  $manager->read($request->file('imagen'));
 
-            //seteamos el tamaño de que deben de tener las imagenes que se suban
-            $qwidth = 808;
-            $qheight = 445;
-
-            // Obtener las dimensiones de la imagen que se esta subiendo
-            $width = $img->width();
-            $height = $img->height();
-
-            if ($width > $height) {
-                //dd('Horizontal');
-                //si es horizontal igualamos el alto de la imagen a alto que queremos
-                $img->resize(height: 445)->crop(808, 445);
-            } else {
-                //dd('Vertical');
-                //En caso sea vertical la imagen
-                //igualamos el ancho y cropeamos
-                $img->resize(width: 808)->crop(808, 445);
-            }
+            
 
 
             $ruta = 'storage/images/servicios/';
@@ -154,34 +139,16 @@ class ServiceController extends Controller
             $manager = new ImageManager(new Driver());
 
 
-            $ruta = storage_path() . '/app/public/images/servicios/' . $service->name_image;
 
             // dd($ruta);
-            if (File::exists($ruta)) {
-                File::delete($ruta);
-            }
+            
 
-            $rutanueva = storage_path() . 'storage/images/servicios/';
+            $rutanueva = 'storage/images/servicios/';
             $nombreImagen = Str::random(10) . '_' . $request->file('imagen')->getClientOriginalName();
 
             $img =  $manager->read($request->file('imagen'));
 
-            $width = $img->width();
-            $height = $img->height();
-
-            $qwidth = 808;
-            $qheight = 445;
-
-            if ($width > $height) {
-                //dd('Horizontal');
-                //si es horizontal igualamos el alto de la imagen a alto que queremos
-                $img->resize(height: 445)->crop(808, 445);
-            } else {
-                //dd('Vertical');
-                //En caso sea vertical la imagen
-                //igualamos el ancho y cropeamos
-                $img->resize(width: 808)->crop(808, 445);
-            }
+            
             
             if (!file_exists($rutanueva)) {
                 mkdir($rutanueva, 0777, true); // Se crea la ruta con permisos de lectura, escritura y ejecución

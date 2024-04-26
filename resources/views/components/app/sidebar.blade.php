@@ -57,25 +57,7 @@
         </h3>
         <ul class="mt-3">
 
-          <!-- Inbox -->
-          <li
-            class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(1), ['dashboard'])) {{ 'bg-slate-900' }} @endif">
-            <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(1), ['dashboard'])) {{ 'hover:text-slate-200' }} @endif"
-              href="{{ route('dashboard') }}">
-              <div class="flex items-center">
-                <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
-                  <path
-                    class="fill-current @if (in_array(Request::segment(1), ['dashboard'])) {{ 'text-indigo-500' }}@else{{ 'text-slate-600' }} @endif"
-                    d="M16 13v4H8v-4H0l3-9h18l3 9h-8Z" />
-                  <path
-                    class="fill-current @if (in_array(Request::segment(1), ['dashboard'])) {{ 'text-indigo-300' }}@else{{ 'text-slate-400' }} @endif"
-                    d="m23.72 12 .229.686A.984.984 0 0 1 24 13v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-8c0-.107.017-.213.051-.314L.28 12H8v4h8v-4H23.72ZM13 0v7h3l-4 5-4-5h3V0h2Z" />
-                </svg>
-                <span
-                  class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Inbox</span>
-              </div>
-            </a>
-          </li>
+
 
           <!-- Messages -->
           <li
@@ -98,7 +80,7 @@
                 <!-- Badge -->
                 <div class="flex flex-shrink-0 ml-2">
                   <span
-                    class="inline-flex items-center justify-center h-5 text-xs font-medium text-white bg-indigo-500 px-2 rounded">4</span>
+                    class="inline-flex items-center justify-center h-5 text-xs font-medium text-white bg-indigo-500 px-2 rounded">{{ $mensajes }}</span>
                 </div>
               </div>
             </a>
@@ -166,47 +148,28 @@
             </a>
           </li>
 
-
-          <!-- Category -->
           <li
-            class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(1), ['categorias'])) {{ 'bg-slate-900' }} @endif">
-            <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(1), ['categorias'])) {{ 'hover:text-slate-200' }} @endif"
-              href="{{ route('categorias.index') }}">
+            class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['strength'])) {{ 'bg-slate-900' }} @endif">
+            <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['strength'])) {{ 'hover:text-slate-200' }} @endif"
+              href="{{ route('strength.index') }}">
               <div class="flex items-center">
                 <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                   <path
-                    class="fill-current @if (in_array(Request::segment(1), ['categorias'])) {{ 'text-indigo-500' }}@else{{ 'text-slate-600' }} @endif"
+                    class="fill-current @if (in_array(Request::segment(2), ['strength'])) {{ 'text-indigo-500' }}@else{{ 'text-slate-600' }} @endif"
                     d="M1 3h22v20H1z" />
                   <path
-                    class="fill-current @if (in_array(Request::segment(1), ['categorias'])) {{ 'text-indigo-300' }}@else{{ 'text-slate-400' }} @endif"
+                    class="fill-current @if (in_array(Request::segment(2), ['strength'])) {{ 'text-indigo-300' }}@else{{ 'text-slate-400' }} @endif"
                     d="M21 3h2v4H1V3h2V1h4v2h10V1h4v2Z" />
                 </svg>
                 <span
-                  class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Categoría</span>
+                  class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Beneficios</span>
               </div>
             </a>
           </li>
 
 
-          <!-- Blog -->
-          <li
-            class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(1), ['blog'])) {{ 'bg-slate-900' }} @endif">
-            <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(1), ['blog'])) {{ 'hover:text-slate-200' }} @endif"
-              href="{{ route('blog.index') }}">
-              <div class="flex items-center">
-                <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
-                  <path
-                    class="fill-current @if (in_array(Request::segment(1), ['blog'])) {{ 'text-indigo-500' }}@else{{ 'text-slate-600' }} @endif"
-                    d="M1 3h22v20H1z" />
-                  <path
-                    class="fill-current @if (in_array(Request::segment(1), ['blog'])) {{ 'text-indigo-300' }}@else{{ 'text-slate-400' }} @endif"
-                    d="M21 3h2v4H1V3h2V1h4v2h10V1h4v2Z" />
-                </svg>
-                <span
-                  class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Blog</span>
-              </div>
-            </a>
-          </li>
+
+
 
           <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(1), ['logos'])) {{ 'bg-slate-900' }} @endif">

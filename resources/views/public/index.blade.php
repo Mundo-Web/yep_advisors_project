@@ -121,7 +121,8 @@
       <!-- WhatsApp-->
       <div class="flex justify-end w-11/12 mx-auto pb-60 mb-4 z-10">
         <div class="fixed bottom-6 sm:bottom-[2rem] lg:bottom-[4rem] z-30">
-          <a href="https://wa.me/+51{{ $generales[0]['whatsapp'] }}" target="_blank" rel="noopener">
+          <a href="https://wa.me/+51{{ $generales[0]['whatsapp'] }}?text={{ $generales[0]['mensaje_whatsapp'] }}"
+            target="_blank" rel="noopener">
             <img src="./images/img/whatsapp.webp" alt="whatsapp" class="w-20 h-20 rounded-full" />
           </a>
         </div>
@@ -341,83 +342,28 @@
             expectativas y generando un crecimiento significativo para
             nuestros clientes.
           </p>
-          <div class="grid grid-cols-1 md:flex justify-between items-center pt-10 gap-10 lg:gap-0 md:pt-5">
-            <div class="flex gap-5 flex-col font-inter font-regular text-regularSize mx-auto" data-aos="fade-up"
-              data-aos-offset="150">
-              <p class="text-6xl font-semibold text-colorSubtitleLittle">
-                100<span class="text-colorAdd">+</span>
-              </p>
-              <div>
-                <p class="text-colorSubtitleLittle">Socios</p>
-                <p class="text-colorSubtitleLittle">Inversionistas</p>
-              </div>
-            </div>
 
-            <div class="flex gap-5 flex-col font-inter font-regular text-regularSize mx-auto" data-aos="fade-up"
-              data-aos-offset="150">
-              <p class="text-6xl font-semibold text-colorSubtitleLittle">
-                $13<span class="text-colorAdd">+</span>
-              </p>
-              <div class="">
-                <p class="text-colorSubtitleLittle font-inter font-regular text-regularSize">
-                  Volumen
-                </p>
-                <p class="text-colorSubtitleLittle" font-inter font-regular text-regularSize>
-                  Negociado
-                </p>
-              </div>
-            </div>
+          @php
+            $chunks = $fortalezas->chunk(3);
+          @endphp
 
-            <div class="flex gap-5 flex-col font-inter font-regular text-regularSize text-colorSubtitleLittle mx-auto"
-              data-aos="fade-up" data-aos-offset="150">
-              <p class="text-6xl font-semibold text-colorSubtitleLittle">
-                78%<span class="text-colorAdd">+</span>
-              </p>
-              <p class="text-colorSubtitleLittle font-inter font-regular text-regularSize">
-                Efectividad en <span class="block">Operaciones hechas</span>
-              </p>
-              <!--  <p class="font-normal text-lg">Inversionistas</p> -->
-            </div>
-          </div>
-          <div class="grid grid-cols-1 md:flex justify-between items-center pt-10 gap-10 lg:gap-0 md:pt-5">
-            <div class="flex gap-5 flex-col font-inter font-regular text-regularSize mx-auto" data-aos="fade-up"
-              data-aos-offset="150">
-              <p class="text-6xl font-semibold text-colorSubtitleLittle">
-                16%<span class="text-colorAdd">+</span>
-              </p>
-              <div>
-                <p class="text-colorSubtitleLittle">Rentabilidad</p>
-                <p class="text-colorSubtitleLittle">Renta Variable</p>
-              </div>
-            </div>
+          @foreach ($chunks as $chunk)
+            <div class="grid grid-cols-1 md:flex justify-between items-center pt-10 gap-10 lg:gap-0 md:pt-5">
 
-            <div class="flex gap-5 flex-col font-inter font-regular text-regularSize mx-auto" data-aos="fade-up"
-              data-aos-offset="150">
-              <p class="text-6xl font-semibold text-colorSubtitleLittle">
-                9%<span class="text-colorAdd">+</span>
-              </p>
-              <div class="">
-                <p class="text-colorSubtitleLittle font-inter font-regular text-regularSize">
-                  Rentabilidad
-                </p>
-                <p class="text-colorSubtitleLittle" font-inter font-regular text-regularSize>
-                  Renta Fija
-                </p>
-              </div>
-            </div>
+              @foreach ($chunk as $item)
+                <div class="flex gap-5 flex-col font-inter font-regular text-regularSize mx-auto" data-aos="fade-up"
+                  data-aos-offset="150">
+                  <p class="text-6xl font-semibold text-colorSubtitleLittle">
+                    {{ $item->titulo }}<span class="text-colorAdd">+</span>
+                  </p>
+                  <div>
+                    <p class="text-colorSubtitleLittle">{!! $item->descripcion !!}</p>
+                  </div>
+                </div>
+              @endforeach
 
-            <div class="flex gap-5 flex-col font-inter font-regular text-regularSize text-colorSubtitleLittle mx-auto"
-              data-aos="fade-up" data-aos-offset="150">
-              <p class="text-6xl font-semibold text-colorSubtitleLittle">
-                13%<span class="text-colorAdd">+</span>
-              </p>
-              <p class="text-colorSubtitleLittle font-inter font-regular text-regularSize">
-                Renta Fija <span class="block">en Soles</span>
-              </p>
-              <!--  <p class="font-normal text-lg">Inversionistas</p> -->
             </div>
-          </div>
-
+          @endforeach
         </div>
       </div>
     </section>
@@ -576,10 +522,10 @@
             </select>
           </div>
 
-          <div
+          <div id="enviarSolicitud"
             class="flex justify-center items-center gap-2 rounded-xl border px-4 bg-colorBackground mt-10 w-full cursor-pointer hover:bg-colorButton duration-300">
             <input type="submit" class="py-3 font-semibold text-base text-white cursor-pointer "
-              id="enviarSolicitud" value="Enviar Solicitud" />
+              value="Enviar Solicitud" />
             <img src="./images/img/trend-up-01.webp" alt="flecha" class="w-6 h-6" />
           </div>
 
@@ -758,7 +704,7 @@
   </script>
 
   <script>
-    document.getElementById('enviarSolicitud').addEventListener('click', function(e) {
+    $('#enviarSolicitud').on('click', function(e) {
       e.preventDefault()
       console.log('enviando solicitud');
       let nombre = document.getElementById('nombre_completo').value
@@ -773,7 +719,14 @@
 
       // let whatsappSelect = document.getElementById('whatsappSelect').checked
       // let correoSelect = document.getElementById('correoSelect').checked
-
+      if (nombre == '' || telefono == "" || email == "") {
+        Swal.fire({
+          title: "Espere !",
+          text: 'Asegúrate de llenar todos los campos antes de enviar el mensaje',
+          icon: "warning"
+        });
+        return
+      }
 
       console.log(nombre)
       console.log(telefono)
@@ -795,13 +748,22 @@
           email,
           textoSeleccionado,
           textoMeet
+        },
+        success: function(success) {
+          Swal.fire({
+            title: "Exito",
+            text: 'Solicitud enviada con exito ',
+            icon: "success"
+          });
+        },
+        error: function(error) {
+          console.log(error)
+          Swal.fire({
+            title: "Ops !",
+            text: 'El mensaje no ha podido ser enviado, en breves momentos volvera a estar disponible',
+            icon: "warning"
+          });
         }
-
-      }).done(function(res) {
-        Swal.fire({
-          title: res.message,
-          icon: "success"
-        });
 
       })
     });

@@ -19,6 +19,7 @@ use App\Http\Controllers\TestimonyController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\LogosClientController;
+use App\Http\Controllers\StrengthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,6 +50,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
     //messages
     Route::resource('/mensajes', MessageController::class);
+    Route::post('/mensajes/borrar', [MessageController::class, 'borrar'])->name('mensajes.borrar');
     
 
     //Datos Generales
@@ -81,6 +83,10 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::post('/logos/deleteLogo', [LogosClientController::class, 'deleteLogo'] )->name('logos.deleteLogo');
 
 
+    Route::resource('/strength', StrengthController::class);
+    Route::post('/strength/updateVisible', [StrengthController::class, 'updateVisible'])->name('strength.updateVisible');
+    Route::post('/strength/borrar', [StrengthController::class, 'borrar'])->name('strength.borrar');
+  
     //test
     // Route::get('/test', [ServiceController::class, 'test']);
     /* 
