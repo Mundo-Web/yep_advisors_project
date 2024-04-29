@@ -353,11 +353,11 @@
               @foreach ($chunk as $item)
                 <div class="flex gap-5 flex-col font-inter font-regular text-regularSize mx-auto" data-aos="fade-up"
                   data-aos-offset="150">
-                  <p class="text-6xl font-semibold text-colorSubtitleLittle">
+                  <p class="text-6xl text-center font-semibold text-colorSubtitleLittle">
                     {{ $item->titulo }}<span class="text-colorAdd">+</span>
                   </p>
-                  <div>
-                    <p class="text-colorSubtitleLittle">{!! $item->descripcion !!}</p>
+                  <div class="text-center px-2">
+                    <p class="text-colorSubtitleLittle ">{!! $item->descripcion !!}</p>
                   </div>
                 </div>
               @endforeach

@@ -55,6 +55,7 @@ class MessageController extends Controller
         return response()->json(['message' => 'Solicitud enviada Correctamente']);
     }
     private function envioCorreo($data){
+        dump($data);
         
         $name = $data['nombre'];
         $mail = EmailConfig::config();
