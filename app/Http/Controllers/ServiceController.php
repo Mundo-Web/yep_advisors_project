@@ -129,8 +129,10 @@ class ServiceController extends Controller
     public function update(Request $request, $id)
     {
 
+        dump($request->all());
         $service = Service::findOrfail($id);
         $service->title = $request->title;
+        $service->link = $request->link;
         $service->description = $request->description;
 
 
