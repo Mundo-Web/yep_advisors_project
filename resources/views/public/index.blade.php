@@ -467,7 +467,7 @@
         <p class="font-regular font-inter text-regularSize pt-2 mb-10">
           Completa el formulario a continuación y nos pondremos en contacto
           contigo lo antes posible para discutir cómo podemos ayudarte a
-          alcanzar tus obketivos financieros.
+          alcanzar tus objetivos financieros.
         </p>
 
         <form id='formEnviarSolicitud' action="#">
