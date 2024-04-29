@@ -24,7 +24,7 @@
               <tr>
                 <th>Enlace</th>
                 <th>Titulo</th>
-                <th>Descripcion</th>
+
                 <th>Foto</th>
                 <th>Visible</th>
                 <th>Acciones</th>
@@ -36,7 +36,7 @@
                 <tr>
                   <td>{{ $item->link }}</td>
                   <td>{{ $item->title }}</td>
-                  <td>{!! $item->description !!}</td>
+
                   <td class="px-3 py-2"><img class="w-20"
                       src="{{ asset('storage/images/servicios/' . $item->name_image) }}" alt=""></td>
                   <td>
@@ -80,7 +80,7 @@
               <tr>
                 <th>Enlace</th>
                 <th>Titulo</th>
-                <th>Descripcion</th>
+
                 <th>Foto</th>
                 <th>Visible</th>
                 <th>Acciones</th>
