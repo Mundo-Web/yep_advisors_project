@@ -258,14 +258,13 @@
             obtener fuentes de financiamiento acordes a tus necesidades.
 
           </li>
-          <li>¡Estamos aquí para impulsar tu <b>éxito financiero</b>!</li>
+
         </ul>
         <p class="font-regular font-inter text-regularSize pb-7 text-colorSubtitle">
           Con un equipo apasionado y una visión audaz, estamos transformando
-          la forma en que se <b>gestionan las finanzas</b>. Desde estrategias
-          innovadoras hasta un servicio personalizado, estamos aquí para
-          impulsar tu éxito financiero.
+          la forma en que se <b>gestionan las finanzas</b>.
         </p>
+        <p>¡Estamos aquí para impulsar tu <b>éxito financiero</b>!</p>
         <div class="w-full">
           <img src="./images/img/Ima2.png" alt="nice to meet you" class="w-full" />
         </div>
@@ -354,7 +353,7 @@
               @foreach ($chunk as $item)
                 <div class="flex gap-5 flex-col font-inter font-regular text-regularSize mx-auto" data-aos="fade-up"
                   data-aos-offset="150">
-                  <p class="text-4xl text-center font-semibold text-colorSubtitleLittle">
+                  <p class="text-5xl text-center font-semibold text-colorSubtitleLittle">
                     {{ $item->titulo }}{{-- <span class="text-colorAdd">+</span> --}}
                   </p>
                   <div class="text-center px-2">
