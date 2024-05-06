@@ -264,7 +264,8 @@
           Con un equipo apasionado y una visión audaz, estamos transformando
           la forma en que se <b>gestionan las finanzas</b>.
         </p>
-        <p>¡Estamos aquí para impulsar tu <b>éxito financiero</b>!</p>
+        <p class="font-regular font-inter text-regularSize pb-7 text-colorSubtitle">¡Estamos aquí para impulsar tu
+          <b>éxito financiero</b>!</p>
         <div class="w-full">
           <img src="./images/img/Ima2.png" alt="nice to meet you" class="w-full" />
         </div>
