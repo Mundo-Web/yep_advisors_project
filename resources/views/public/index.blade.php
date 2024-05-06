@@ -619,7 +619,7 @@
     <div class="grid grid-cols-1 gap-5 md:flex justify-between w-11/12 mx-auto">
       <div class="flex flex-col mb-5 gap-2 md:mb-0">
         <h2 class="font-inter font-medium text-littleTitle text-white">
-          Yep Avidsor
+          Yep Advisors
         </h2>
         <p class="font-inter font-regular text-regularSize text-white">
           Tu socio confiable en el mundo financiero.
