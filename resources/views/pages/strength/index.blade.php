@@ -34,7 +34,7 @@
               @foreach ($strength as $item)
                 <tr>
                   <td>{{ $item->titulo }}</td>
-                  <td>{!! $item->titulo !!}</td>
+                  <td>{!! $item->descripcion !!}</td>
 
 
 
