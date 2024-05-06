@@ -638,7 +638,7 @@
         <div class="flex flex-col gap-5">
           <a href="#" class="font-inter font-medium font-basicSize">Navegador</a>
           <a href="#nuestros_servicios" class="font-inter font-regular text-basic">Servicios</a>
-          <a href="#clientes" class="font-inter font-regular text-basic">Clientes</a>
+          <a href="#clientes" class="font-inter font-regular text-basic">Partnerships</a>
           <a href="#nosotros" class="font-inter font-regular text-basic">Nosotros</a>
           <a href="#form" class="font-inter font-regular text-basic">Contacto</a>
         </div>
