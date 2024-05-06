@@ -187,7 +187,7 @@ class MessageController extends Controller
                             <tr>
                             <td>
                                 <a
-                                href="https://mundoweb.pe/"
+                                href="https://yepadvisors.com/"
                                 style="
                                     text-decoration: none;
                                     background-color: #2d694b;
