@@ -265,7 +265,8 @@
           la forma en que se <b>gestionan las finanzas</b>.
         </p>
         <p class="font-regular font-inter text-regularSize pb-7 text-colorSubtitle">¡Estamos aquí para impulsar tu
-          <b>éxito financiero</b>!</p>
+          <b>éxito financiero</b>!
+        </p>
         <div class="w-full">
           <img src="./images/img/Ima2.png" alt="nice to meet you" class="w-full" />
         </div>
@@ -286,7 +287,7 @@
             exhaustivo <b>análisis fundamental</b> que nos permite identificar
             las mejores empresas con mayor potencial de crecimiento y
             aplicando diferentes estrategias de <b>análisis técnico</b> que
-            nos permite identificar las tendencia del mercado y así obtener
+            nos permite identificar la tendencia del mercado y así obtener
             la rentabilidad esperada.
           </p>
         </div>
