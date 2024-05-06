@@ -62,7 +62,7 @@
       <!-- Navbar  -->
       <div class="flex justify-between items-center w-11/12 mx-auto">
         <div class="px-5">
-          <img src="./images/img/Layer_1.webp" alt="logo" class="w-48 h-32" />
+          <img src="./images/img/Layer_1.svg" alt="logo" class="w-48 h-32" />
         </div>
         <div class="hidden md:block">
           <nav
