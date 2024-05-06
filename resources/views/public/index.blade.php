@@ -355,7 +355,7 @@
               @foreach ($chunk as $item)
                 <div class="flex gap-5 flex-col font-inter font-regular text-regularSize mx-auto" data-aos="fade-up"
                   data-aos-offset="150">
-                  <p class="text-5xl text-center font-semibold text-colorSubtitleLittle">
+                  <p class="text-6xl text-center font-semibold text-colorSubtitleLittle">
                     {{ $item->titulo }}{{-- <span class="text-colorAdd">+</span> --}}
                   </p>
                   <div class="text-center px-2">
