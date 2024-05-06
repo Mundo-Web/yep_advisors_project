@@ -629,8 +629,7 @@
             <img src="./images/svg/linkedin.svg" alt="instagram" class="cursor-pointer text-white w-6" /></a>
           <a href="https://{{ $generales[0]['facebook'] }}" target="_blank"><img src="./images/svg/facebook.svg"
               alt="facebook" class="cursor-pointer" /></a>
-          <a href="https://{{ $generales[0]['youtube'] }}" target="_blank"><img src="./images/svg/youtube.svg"
-              alt="youtube" class="cursor-pointer" /></a>
+
         </div>
       </div>
 
