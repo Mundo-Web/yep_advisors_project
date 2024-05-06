@@ -568,8 +568,8 @@
               <div>
                 <p class="font-medium text-regularSize font-inter">Dirección</p>
                 <p class="font-regular text-basic font-inter">
-                  {{ $contacto->address }}, {{ $contacto->inside }} , {{ $contacto->district }} -
-                  {{ $contacto->city }} , {{ $contacto->country }}
+                  {{ $contacto->address }}, {{ $contacto->inside }}, {{ $contacto->district }} -
+                  {{ $contacto->city }}, {{ $contacto->country }}
                 </p>
               </div>
             </div>
