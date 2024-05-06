@@ -297,7 +297,7 @@
     <!-- PARTNERSHIPS  -->
 
     <section class="bg-[#F9FCFB] py-5 my-10" id="clientes" data-aos="fade-up" data-aos-offset="150">
-      <h2 class="font-inter font-semibold text-littleTitle text-center pb-10 text-[#2D694B]">
+      <h2 class="font-inter font-semibold text-3xl text-center pb-10 text-[#2D694B]">
         Partnerships
       </h2>
 
@@ -625,7 +625,7 @@
           Tu socio confiable en el mundo financiero.
         </p>
         <div class="flex gap-5">
-          <a href="https://{{ $generales[0]['instagram'] }}" target="_blank"><img src="./images/svg/instagram.svg"
+          <a href="https://{{ $generales[0]['instagram'] }}" target="_blank"><img src="./images/svg/linkedin.svg"
               alt="instagram" class="cursor-pointer" /></a>
           <a href="https://{{ $generales[0]['facebook'] }}" target="_blank"><img src="./images/svg/facebook.svg"
               alt="facebook" class="cursor-pointer" /></a>

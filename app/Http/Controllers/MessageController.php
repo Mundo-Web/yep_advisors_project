@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Helpers\EmailConfig;
 use App\Http\Requests\StoreMessageRequest;
 use App\Http\Requests\UpdateMessageRequest;
+use App\Models\General;
 use App\Models\Message;
 use Illuminate\Http\Request;
 
@@ -55,7 +56,7 @@ class MessageController extends Controller
         return response()->json(['message' => 'Solicitud enviada Correctamente']);
     }
     private function envioCorreo($data){
-        dump($data);
+        
         
         $name = $data['nombre'];
         $mail = EmailConfig::config();
@@ -226,12 +227,26 @@ class MessageController extends Controller
             ';
             $mail->isHTML(true);
             $mail->send();
+            $this->envioCorreoadm();
             
         } catch (\Throwable $th) {
             //throw $th;
         }
         
        
+    }
+    private function envioCorreoadm(){
+         
+        $mail = EmailConfig::config();
+        $datosGenerales = General::all();
+        
+            $mail->addAddress($datosGenerales['email']);
+            $mail->Body = '
+                    Un Cliente desa ponerse en contacto con usted, por favor revise su correo 
+          
+            ';
+            $mail->isHTML(true);
+            $mail->send();
     }
 
     /**
