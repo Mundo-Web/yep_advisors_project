@@ -646,7 +646,8 @@
         <div class="flex flex-col gap-5">
           <a href="#" class="font-inter font-medium font-basicSize">Dirección</a>
           <a href="#" class="font-inter font-regular text-basic">{{ $generales[0]['address'] }}</a>
-          <a href="#" class="font-inter font-regular text-basic">{{ $generales[0]['inside'] }}</a>
+          <a href="#" class="font-inter font-regular text-basic">{{ $generales[0]['inside'] }} ,
+            {{ $generales[0]['district'] }}</a>
           <a href="#" class="font-inter font-regular text-basic">{{ $generales[0]['city'] }} -
             {{ $generales[0]['country'] }}</a>
           <a href="#" class="font-inter font-regular text-basic">
