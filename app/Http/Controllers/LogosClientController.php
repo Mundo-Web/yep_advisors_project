@@ -38,7 +38,7 @@ class LogosClientController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title'=>'required',
+            //'title'=>'required',
         ]);
 
         $post = new ClientLogos();
