@@ -238,7 +238,7 @@ class MessageController extends Controller
     private function envioCorreoadm(){
          
         $mail = EmailConfig::config();
-        $datosGenerales = General::all();
+        $datosGenerales = General::all()->toArray();
         
             $mail->addAddress($datosGenerales[0]['email']);
             $mail->Body = '
