@@ -240,7 +240,7 @@ class MessageController extends Controller
         $mail = EmailConfig::config();
         $datosGenerales = General::all();
         
-            $mail->addAddress($datosGenerales['email']);
+            $mail->addAddress($datosGenerales[0]['email']);
             $mail->Body = '
                     Un Cliente desa ponerse en contacto con usted, por favor revise su correo 
           
