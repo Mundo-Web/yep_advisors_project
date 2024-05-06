@@ -297,7 +297,7 @@
     <!-- PARTNERSHIPS  -->
 
     <section class="bg-[#F9FCFB] py-5 my-10" id="clientes" data-aos="fade-up" data-aos-offset="150">
-      <h2 class="font-inter font-semibold text-3xl text-center pb-10 text-[#2D694B]">
+      <h2 class="font-inter font-semibold text-6xl text-center pb-10 text-[#2D694B]">
         Partnerships
       </h2>
 
