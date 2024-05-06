@@ -24,8 +24,7 @@
               <tr>
                 <th>Titulo </th>
 
-                <th>Icono</th>
-                <th>Imagen</th>
+                <th>Descripcion</th>
                 <th>Visible</th>
                 <th>Acciones</th>
               </tr>
@@ -35,10 +34,9 @@
               @foreach ($strength as $item)
                 <tr>
                   <td>{{ $item->titulo }}</td>
+                  <td>{!! $item->titulo !!}</td>
 
-                  <td class="px-3 py-2"><img class="w-20" src="{{ asset($item->icono) }}" alt=""></td>
 
-                  <td class="px-3 py-2"><img class="w-20" src="{{ asset($item->imagen) }}" alt=""></td>
 
                   <td>
                     <form method="POST" action="">
@@ -81,8 +79,7 @@
               <tr>
                 <th>Titulo </th>
 
-                <th>Icono</th>
-                <th>Imagen</th>
+                <th>Descripcion</th>
                 <th>Visible</th>
                 <th>Acciones</th>
               </tr>
