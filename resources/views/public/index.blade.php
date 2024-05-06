@@ -103,7 +103,7 @@
           de Wealth Management, Finanzas Corporativas y Estructuración
           Financiera. Nuestros especialistas se encargarán de implementar
           <b>estrategias financieras</b> innovadoras para garantizar el
-          crecimiento y la perdurabilidad de tu patrimonio a lo largo de las
+          crecimiento y la perdurabilidad de su patrimonio a lo largo de las
           generaciones.
         </p>
         <div class="flex justify-center pt-5">
@@ -256,8 +256,9 @@
           <li>
             Nuestro servicio de <b>Estructuración Financiera</b>, te ayudará a
             obtener fuentes de financiamiento acordes a tus necesidades.
-            ¡Estamos aquí para impulsar tu <b>éxito financiero</b>!
+
           </li>
+          <li>¡Estamos aquí para impulsar tu <b>éxito financiero</b>!</li>
         </ul>
         <p class="font-regular font-inter text-regularSize pb-7 text-colorSubtitle">
           Con un equipo apasionado y una visión audaz, estamos transformando
@@ -285,8 +286,8 @@
             exhaustivo <b>análisis fundamental</b> que nos permite identificar
             las mejores empresas con mayor potencial de crecimiento y
             aplicando diferentes estrategias de <b>análisis técnico</b> que
-            nos permite identificar las tendencias del mercado y así obtener
-            la rentabilidad esperada
+            nos permite identificar las tendencia del mercado y así obtener
+            la rentabilidad esperada.
           </p>
         </div>
       </div>
@@ -353,7 +354,7 @@
               @foreach ($chunk as $item)
                 <div class="flex gap-5 flex-col font-inter font-regular text-regularSize mx-auto" data-aos="fade-up"
                   data-aos-offset="150">
-                  <p class="text-6xl text-center font-semibold text-colorSubtitleLittle">
+                  <p class="text-2xl text-center font-semibold text-colorSubtitleLittle">
                     {{ $item->titulo }}{{-- <span class="text-colorAdd">+</span> --}}
                   </p>
                   <div class="text-center px-2">
